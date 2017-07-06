@@ -1,0 +1,23 @@
+{
+  "name": "demos",
+  "version": "1.0.0",
+  "description": "demos of work",
+  "main": "index.html",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "hello!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-mr/demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-mr/demos/issues"
+  },
+  "homepage": "https://github.com/mr-mr/demos#readme"
+}
