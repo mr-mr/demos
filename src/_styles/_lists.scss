@@ -29,52 +29,6 @@ $breakpoints: (
     }
 }
 
-
-
-// @each $mq in $mq-breakpoints {
-//     @media screen and (max-width:#{$mq}){
-//       @each $name, $color, $height in $stampList {
-//         $i: index($name);
-//         .button-#{$i} {
-//           background-color: nth($color, $i);
-//         }
-//     }
-//   }
-// }
-
-// $background-colors-list: #4BC2A5 #606F40 #6648CA #6B6022 #2F54E9;
-// $border-colors-list: #ff9900 #77ff66 #73C227 #C23E50 #7BAFC2;
-// $colors-list: #111 #222 #333 #444 #555;
-// @each $current-color in $colors-list {
-//     $i: index($colors-list, $current-color);
-//     .stuff-#{$i} {
-//         color: $current-color;
-//         background-color: nth($background-colors-list, $i);
-//         border: 1px solid nth($border-colors-list, $i);
-//     }
-// }
-
-// @each $name, $color, $height in $stampList {
-//   .button-#{$name} {
-//     background-color: $color;
-//     height: $height;
-//   }
-//   @include mq(tablet){
-//     .button-#{$name} {
-//       background-color: $color;
-//       height: $height;
-//     }
-//   }
-// }
-
-
-$stampList: (
-  red #e74c3c calc(100vh - #{$body__padding}),
-  blue #3498db calc(100vh - #{$body__padding}),
-  green #2ecc71 calc(100vh - #{$body__padding}),
-  yellow #E2C11F calc(100vh - #{$body__padding})
-);
-
 // $colorList: (
 //   $red,
 //   $blue,
