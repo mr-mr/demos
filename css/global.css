@@ -17,11 +17,11 @@
       align-items: center;
       height: 100%;
       color: #fafafa;
-      content: "mobile"; } }
+      content: "mobile."; } }
 
 @media (min-width: 740px) {
   .list-example {
-    background-color: #3498db;
+    background-color: #E2C11F;
     width: 100%;
     height: calc(100vh - 15px);
     position: absolute; }
@@ -33,7 +33,7 @@
       align-items: center;
       height: 100%;
       color: #fafafa;
-      content: "tablet"; } }
+      content: "tablet."; } }
 
 @media (min-width: 980px) {
   .list-example {
@@ -49,11 +49,11 @@
       align-items: center;
       height: 100%;
       color: #fafafa;
-      content: "desktop"; } }
+      content: "desktop."; } }
 
 @media (min-width: 1300px) {
   .list-example {
-    background-color: #E2C11F;
+    background-color: #3498db;
     width: 100%;
     height: calc(100vh - 15px);
     position: absolute; }
@@ -65,4 +65,4 @@
       align-items: center;
       height: 100%;
       color: #fafafa;
-      content: "wide"; } }
+      content: "wide."; } }

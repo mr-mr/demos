@@ -1,41 +1,20 @@
-$body__padding: 15px;
-
-$red: #e74c3c;
-$blue: #3498db;
-$green: #2ecc71;
-$yellow: #E2C11F;
-$white: #fafafa;
-
-@mixin font-header {
-  font: 100px $base-font-family;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: $white;
-}
-.demo-container {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
+//Map logic
 $breakpoints: (
-    mobile 320px #e74c3c,
-    tablet 740px #3498db,
-    desktop 980px #2ecc71,
-    wide 1300px #E2C11F
+    //name mq colour
+    mobile 320px $red,
+    tablet 740px $yellow,
+    desktop 980px $green,
+    wide 1300px $blue
 );
 
-@each $name, $mq, $colors in $breakpoints {
+@each $name, $mq, $color in $breakpoints {
     .list-example {
       @media (min-width: $mq){
           &:before {
             @include font-header;
-          content:'#{$name}';
+          content:'#{$name}.';
         }
-        background-color: $colors;
+        background-color: $color;
         width: 100%;
         height: calc(100vh - #{$body__padding});
         position: absolute;
@@ -43,6 +22,9 @@ $breakpoints: (
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+///// Test code I was playing around with
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // $colorList: (
 //   $red,
 //   $blue,
