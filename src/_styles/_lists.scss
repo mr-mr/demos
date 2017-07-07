@@ -4,7 +4,17 @@ $red: #e74c3c;
 $blue: #3498db;
 $green: #2ecc71;
 $yellow: #E2C11F;
+$white: #fafafa;
 
+@mixin font-header {
+  font: 100px $base-font-family;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: $white;
+}
 .demo-container {
   position: relative;
   margin: 0;
@@ -21,6 +31,10 @@ $breakpoints: (
 @each $name, $mq, $colors in $breakpoints {
     .list-example {
       @media (min-width: $mq){
+          &:before {
+            @include font-header;
+          content:'#{$name}';
+        }
         background-color: $colors;
         width: 100%;
         height: calc(100vh - #{$body__padding});
