@@ -1,0 +1,36 @@
+.stamp-example {
+  margin: 0;
+  padding: 0; }
+
+.demo-container {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 320px) {
+  .list-example {
+    background-color: #e74c3c;
+    width: 100%;
+    height: calc(100vh - 15px);
+    position: absolute; } }
+
+@media (min-width: 740px) {
+  .list-example {
+    background-color: #3498db;
+    width: 100%;
+    height: calc(100vh - 15px);
+    position: absolute; } }
+
+@media (min-width: 980px) {
+  .list-example {
+    background-color: #2ecc71;
+    width: 100%;
+    height: calc(100vh - 15px);
+    position: absolute; } }
+
+@media (min-width: 1300px) {
+  .list-example {
+    background-color: #E2C11F;
+    width: 100%;
+    height: calc(100vh - 15px);
+    position: absolute; } }
