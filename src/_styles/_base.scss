@@ -9,6 +9,13 @@ $green: #2ecc71;
 $yellow: #E2C11F;
 $white: #fafafa;
 
+//Breakpoints
+$bp-small-mobile-width: 320px;
+$bp-mobile-width: 504px;
+$bp-tablet-width: 756px;
+$bp-tablet-landscape-width: 1008px;
+$bp-desktop-width: 1260px;
+
 //Mixins
 @mixin font-header {
   font: 100px $base-font-family;
