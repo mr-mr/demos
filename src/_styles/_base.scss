@@ -35,7 +35,12 @@ $bp-desktop-width: 1260px;
 
 //Base style
 .demo-container {
+  display: flex;
+  // flex:0 20px;
   position: relative;
+  width: calc(100vw - #{$body__padding});
+  height: calc(100vh - #{$body__padding});
+  background-color: lightgrey;
   margin: 0;
   padding: 0;
 }

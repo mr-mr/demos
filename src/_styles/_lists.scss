@@ -27,23 +27,45 @@ $breakpoints: (
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// Test code I was playing around with
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-// $colorList: (
-//   $red,
-//   $blue,
-//   $green,
-//   $yellow
-// );
-//
-// @each $current-color in $colorList {
-//   $i: index($colorList, $current-color);
-//   .list-#{$i} {
-//     width: 100%;
-//     height: calc(100vh - #{$body__padding});
-//     background-color: nth($colorList, $i);
-//     position: absolute;
-//   }
-// }
-//
+$colorList: (
+  $red,
+  $yellow,
+  $blue,
+  $green
+);
+
+@each $current-color in $colorList {
+  $i: index($colorList, $current-color);
+  .list-#{$i} {
+    width: 25vw;
+    height: calc(100vh - #{$body__padding});
+    background-color: nth($colorList, $i);
+  }
+}
+
+.grid {}
+
+.grid::before,
+.grid::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.grid__item {
+    box-sizing: border-box;
+    float: left;
+    height: 50vw;
+    padding: 2em;
+    width: 50vw;
+}
+
+@for $i from 1 through 8 {
+  .grid__item:nth-child(#{$i}) {
+    background-color: hsl(360 / 72 * $i, 100%, 60%);
+  }
+}
+
 $o-grid-default-config: (
     columns: 12,
     gutter: 10px,
